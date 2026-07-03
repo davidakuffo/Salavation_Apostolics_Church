@@ -30,14 +30,14 @@ const About = () => (
       <div className="container mx-auto mt-16 grid gap-12 lg:grid-cols-2 lg:items-start">
         <div className="space-y-8 rounded-3xl border border-gray-200 bg-gray-50 p-10 shadow-soft">
           <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-amber-700">Mission</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-secondary">Mission</p>
             <h3 className="mt-4 text-2xl font-semibold text-primary">Lead with faith, hope, and love.</h3>
             <p className="mt-4 text-gray-600 leading-7">
               Our mission is to invite people into a deeper relationship with Christ through vibrant teaching, compassionate care, and everyday discipleship.
             </p>
           </div>
           <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-amber-700">History</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-secondary">History</p>
             <p className="mt-4 text-gray-600 leading-7">
               Founded to serve families across the region, our church has grown from a small gathering into a joyful community of believers who love God and love people.
             </p>
@@ -52,12 +52,12 @@ const About = () => (
               className="h-80 w-full object-cover"
             />
             <div className="space-y-4 p-8">
-              <p className="text-sm uppercase tracking-[0.3em] text-amber-200">Meet the pastor</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-secondary/70">Meet the pastor</p>
               <h3 className="text-2xl font-semibold">Pastor Elijah Walker</h3>
               <p className="text-gray-100 leading-7">
                 Pastor Elijah brings passionate preaching, grounded discipleship, and a warm spirit to every gathering.
               </p>
-              <div className="inline-flex items-center gap-2 text-sm font-semibold text-amber-200">
+              <div className="inline-flex items-center gap-2 text-sm font-semibold text-secondary/70">
                 <MapPin size={16} />
                 Springtown, USA
               </div>
@@ -69,7 +69,7 @@ const About = () => (
               const Icon = item.icon
               return (
                 <div key={item.title} className="rounded-3xl border border-gray-200 bg-white p-6 text-center shadow-soft">
-                  <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-700">
+                  <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary/10 text-secondary">
                     <Icon size={20} />
                   </div>
                   <h4 className="mt-6 text-lg font-semibold text-primary">{item.title}</h4>

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Play, Heart, Users, BookOpen } from 'lucide-react'
 import { motion } from 'framer-motion'
 import SectionHeading from '../components/SectionHeading'
+import { picture1 } from '../assets/assets'
 
 const Home = () => {
   return (
@@ -12,16 +13,19 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="absolute inset-0 bg-[url('https://picsum.photos/1600/900?church')] bg-cover bg-center opacity-60"></div>
+        <div
+          className="absolute inset-0 bg-cover bg-center "
+          style={{ backgroundImage: `url(${picture1})` }}
+        />
         <div className="absolute inset-0 bg-primary/80"></div>
         <div className="relative container mx-auto px-6 py-28 text-center">
           <motion.p 
-            className="mb-4 text-sm uppercase tracking-[0.3em] text-amber-300/80"
+            className="mb-4 text-sm uppercase tracking-[0.3em] text-secondary/80"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Welcome
+                Welcome
           </motion.p>
           <motion.h1 
             className="mx-auto max-w-3xl text-4xl font-heading font-semibold leading-tight tracking-tight sm:text-5xl"
@@ -32,12 +36,12 @@ const Home = () => {
             Welcome to Salvation Apostolics Church
           </motion.h1>
           <motion.p 
-            className="mx-auto mt-6 max-w-2xl text-base leading-8 text-amber-100 sm:text-lg"
+            className="mx-auto mt-6 max-w-2xl text-base leading-8 text-secondary/40 sm:text-lg"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.6 }}
           >
-            A place of faith, community, and purpose — where every story is welcomed and every life is cherished.
+             A place of faith, community, and purpose — where every story is welcomed and every life is cherished.
           </motion.p>
           <motion.div 
             className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
@@ -76,14 +80,14 @@ const Home = () => {
             viewport={{ once: true }}
           >
             <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-amber-700">Mission</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-secondary">Mission</p>
               <h3 className="mt-4 text-2xl font-semibold text-primary">Invite, empower, and disciple.</h3>
               <p className="mt-4 text-gray-600 leading-7">
                 We gather to worship Jesus, support families, and create meaningful opportunities for people to grow in spiritual maturity.
               </p>
             </div>
             <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-amber-700">Vision</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-secondary">Vision</p>
               <h3 className="mt-4 text-2xl font-semibold text-primary">A church that makes faith feel accessible.</h3>
               <p className="mt-4 text-gray-600 leading-7">
                 Our vision is a church where every person can discover purpose, connect with others, and find practical hope for today.
@@ -99,7 +103,7 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <p className="text-sm uppercase tracking-[0.3em] text-amber-700">Featured</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-secondary">Featured</p>
               <h3 className="mt-4 text-xl font-semibold text-primary">Latest message</h3>
               <p className="mt-3 text-gray-600 leading-7">
                 Discover practical truth from this week’s sermon and take home encouragement for your family and work.
@@ -116,7 +120,7 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              <p className="text-sm uppercase tracking-[0.3em] text-amber-700">Community</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-secondary">Community</p>
               <h3 className="mt-4 text-xl font-semibold text-primary">Gather with others.</h3>
               <p className="mt-3 text-gray-600 leading-7">
                 Grow in fellowship through weekly worship, small groups, and service opportunities across the city.
@@ -152,7 +156,7 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <Heart className="mx-auto h-10 w-10 text-amber-500" />
+              <Heart className="mx-auto h-10 w-10 text-secondary" />
               <h3 className="mt-6 text-xl font-semibold text-primary">Compassion</h3>
               <p className="mt-4 text-gray-600 leading-7">
                 Caring for every neighbor with kindness, support, and thoughtful outreach.
@@ -165,7 +169,7 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <Users className="mx-auto h-10 w-10 text-amber-500" />
+              <Users className="mx-auto h-10 w-10 text-secondary" />
               <h3 className="mt-6 text-xl font-semibold text-primary">Community</h3>
               <p className="mt-4 text-gray-600 leading-7">
                 Building strong relationships across generations and backgrounds.
@@ -178,7 +182,7 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <BookOpen className="mx-auto h-10 w-10 text-amber-500" />
+              <BookOpen className="mx-auto h-10 w-10 text-secondary" />
               <h3 className="mt-6 text-xl font-semibold text-primary">Faith</h3>
               <p className="mt-4 text-gray-600 leading-7">
                 Rooting our life together in scripture, prayer, and intentional worship.

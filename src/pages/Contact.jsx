@@ -16,22 +16,22 @@ const Contact = () => (
             <div className="grid gap-6 sm:grid-cols-2">
               <label className="block">
                 <span className="text-sm font-medium text-gray-700">Name</span>
-                <input className="mt-3 w-full rounded-3xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 outline-none transition focus:border-amber-400" type="text" placeholder="Your name" />
+                <input className="mt-3 w-full rounded-3xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 outline-none transition focus:border-primary" type="text" placeholder="Your name" />
               </label>
               <label className="block">
                 <span className="text-sm font-medium text-gray-700">Email</span>
-                <input className="mt-3 w-full rounded-3xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 outline-none transition focus:border-amber-400" type="email" placeholder="you@example.com" />
+                <input className="mt-3 w-full rounded-3xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 outline-none transition focus:border-primary" type="email" placeholder="you@example.com" />
               </label>
             </div>
             <label className="block">
               <span className="text-sm font-medium text-gray-700">Phone (optional)</span>
-              <input className="mt-3 w-full rounded-3xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 outline-none transition focus:border-amber-400" type="tel" placeholder="(555) 012-3456" />
+              <input className="mt-3 w-full rounded-3xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 outline-none transition focus:border-primary" type="tel" placeholder="(555) 012-3456" />
             </label>
             <label className="block">
               <span className="text-sm font-medium text-gray-700">Message</span>
-              <textarea className="mt-3 w-full rounded-3xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 outline-none transition focus:border-amber-400" rows="6" placeholder="Share how we can support you"></textarea>
+              <textarea className="mt-3 w-full rounded-3xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 outline-none transition focus:border-primary" rows="6" placeholder="Share how we can support you"></textarea>
             </label>
-            <button type="submit" className="inline-flex rounded-full bg-amber-500 px-8 py-3 text-sm font-semibold text-primary transition hover:bg-amber-400">
+            <button type="submit" className="inline-flex rounded-full bg-primary px-8 py-3 text-sm font-semibold text-white transition hover:bg-primary/90">
               Submit message
             </button>
           </form>
@@ -39,24 +39,24 @@ const Contact = () => (
 
         <div className="space-y-10">
           <div className="rounded-3xl border border-gray-200 bg-white p-8 shadow-soft">
-            <p className="text-sm uppercase tracking-[0.3em] text-amber-700">Visit us</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-secondary">Visit us</p>
             <div className="mt-6 space-y-5 text-sm text-gray-600">
               <div className="flex items-start gap-3">
-                <MapPin size={18} className="text-amber-700" />
+                <MapPin size={18} className="text-secondary" />
                 <div>
                   <p className="font-semibold text-primary">Church address</p>
                   <p>123 Faith Avenue, Springtown, USA</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <Phone size={18} className="text-amber-700" />
+                <Phone size={18} className="text-secondary" />
                 <div>
                   <p className="font-semibold text-primary">Phone</p>
                   <p>(555) 012-3456</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <Mail size={18} className="text-amber-700" />
+                <Mail size={18} className="text-secondary" />
                 <div>
                   <p className="font-semibold text-primary">Email</p>
                   <p>hello@salvationapostolics.org</p>
@@ -75,18 +75,18 @@ const Contact = () => (
           </div>
 
           <div className="rounded-3xl border border-gray-200 bg-white p-8 shadow-soft">
-            <p className="text-sm uppercase tracking-[0.3em] text-amber-700">Service times</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-secondary">Service times</p>
             <div className="mt-6 space-y-4 text-sm text-gray-600">
               <div className="flex items-center gap-3">
-                <Clock size={16} className="text-amber-700" />
+                <Clock size={16} className="text-secondary" />
                 <span>Sunday Worship — 10:00 AM</span>
               </div>
               <div className="flex items-center gap-3">
-                <Clock size={16} className="text-amber-700" />
+                <Clock size={16} className="text-secondary" />
                 <span>Wednesday Bible Study — 7:00 PM</span>
               </div>
               <div className="flex items-center gap-3">
-                <Clock size={16} className="text-amber-700" />
+                <Clock size={16} className="text-secondary" />
                 <span>Friday Prayer Night — 6:30 PM</span>
               </div>
             </div>

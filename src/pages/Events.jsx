@@ -33,7 +33,7 @@ const Events = () => (
       <div className="container mx-auto mt-16 px-6">
         {events.length === 0 ? (
           <div className="rounded-3xl border border-dashed border-gray-300 bg-gray-50 p-16 text-center">
-            <p className="text-sm uppercase tracking-[0.3em] text-amber-700">No events</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-secondary">No events</p>
             <h3 className="mt-4 text-3xl font-semibold text-primary">There are no upcoming events right now.</h3>
             <p className="mt-4 text-gray-600">Check back soon for new gatherings, study nights, and worship experiences.</p>
           </div>
@@ -42,7 +42,7 @@ const Events = () => (
             {events.map((event) => (
               <article key={event.title} className="rounded-3xl border border-gray-200 bg-gray-50 p-8 shadow-soft">
                 <div className="flex items-center gap-4">
-                  <div className="rounded-3xl bg-amber-100 px-4 py-4 text-center text-sm font-semibold text-amber-700">
+                  <div className="rounded-3xl bg-secondary/10 px-4 py-4 text-center text-sm font-semibold text-secondary">
                     <p>{event.date}</p>
                   </div>
                   <div>
@@ -52,11 +52,11 @@ const Events = () => (
                 </div>
                 <div className="mt-6 space-y-3 text-sm text-gray-600">
                   <p className="inline-flex items-center gap-2">
-                    <Clock size={16} className="text-amber-700" />
+                    <Clock size={16} className="text-secondary" />
                     {event.time}
                   </p>
                   <p className="inline-flex items-center gap-2">
-                    <MapPin size={16} className="text-amber-700" />
+                    <MapPin size={16} className="text-secondary" />
                     {event.location}
                   </p>
                 </div>
